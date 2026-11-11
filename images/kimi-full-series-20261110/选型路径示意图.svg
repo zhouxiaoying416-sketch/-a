@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Kimi API 企业开发选型路径</title>
+  <desc id="desc">先根据任务确定评测，再按输出完整性、正确性和延迟筛选模型；长任务应拆分后复测。</desc>
+  <rect width="1200" height="520" fill="#f6f8fa"/>
+  <text x="56" y="68" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#172b4d">先定义开发任务，再筛 Kimi API 型号</text>
+  <text x="56" y="108" font-family="Arial, sans-serif" font-size="18" fill="#52606d">完整交付进回归集，截断先拆任务，超时先查调用</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="56" y="160" width="245" height="248" rx="8" fill="#ffffff" stroke="#aab7c4" stroke-width="2"/>
+    <text x="82" y="204" font-size="23" font-weight="700" fill="#172b4d">1. 明确主任务</text>
+    <text x="82" y="250" font-size="18" fill="#354052">代码审查</text>
+    <text x="82" y="285" font-size="18" fill="#354052">文档字段抽取</text>
+    <text x="82" y="320" font-size="18" fill="#354052">需求冲突与验收</text>
+    <text x="82" y="374" font-size="16" fill="#52606d">先选任务，不先追热度</text>
+    <path d="M316 284h48" stroke="#486581" stroke-width="3"/><path d="m356 275 12 9-12 9" fill="none" stroke="#486581" stroke-width="3"/>
+    <rect x="378" y="160" width="330" height="248" rx="8" fill="#ffffff" stroke="#aab7c4" stroke-width="2"/>
+    <text x="404" y="204" font-size="23" font-weight="700" fill="#172b4d">2. 固定评测与校验</text>
+    <text x="404" y="250" font-size="18" fill="#354052">同一输入、同一输出上限</text>
+    <text x="404" y="285" font-size="18" fill="#354052">校验正确性与必需字段</text>
+    <text x="404" y="320" font-size="18" fill="#354052">检查 JSON、耗时、失败</text>
+    <text x="404" y="374" font-size="16" fill="#52606d">记录条件，保留失败样本</text>
+    <path d="M723 284h48" stroke="#486581" stroke-width="3"/><path d="m763 275 12 9-12 9" fill="none" stroke="#486581" stroke-width="3"/>
+    <rect x="785" y="160" width="359" height="248" rx="8" fill="#ffffff" stroke="#aab7c4" stroke-width="2"/>
+    <text x="811" y="204" font-size="23" font-weight="700" fill="#172b4d">3. 按结果进入下一轮</text>
+    <text x="811" y="250" font-size="18" fill="#176b5b">完整可解析：加入回归集</text>
+    <text x="811" y="285" font-size="18" fill="#9b4d00">截断：拆任务并复测预算</text>
+    <text x="811" y="320" font-size="18" fill="#a61b1b">超时/空响应：查调用条件</text>
+    <text x="811" y="374" font-size="16" fill="#52606d">只在自己的业务样本上定型</text>
+  </g>
+</svg>
