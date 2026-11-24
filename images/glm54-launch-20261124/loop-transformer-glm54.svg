@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="850" viewBox="0 0 1500 850" role="img" aria-label="GLM-5.4 Loop Transformer 架构示意图">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101932"/><stop offset="1" stop-color="#172848"/></linearGradient>
+    <linearGradient id="block" x2="1"><stop stop-color="#5A82F7"/><stop offset="1" stop-color="#826DF4"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="13" flood-opacity=".22"/></filter>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#A9C0F8"/></marker>
+  </defs>
+  <rect width="1500" height="850" fill="url(#bg)"/>
+  <text x="80" y="100" fill="#F4F7FF" font-size="47" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-weight="700">GLM-5.4 的 Loop Transformer：同一组层运行两轮</text>
+  <text x="81" y="149" fill="#AFC1E5" font-size="24" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">官方描述的结构要点；箭头表示数据流，不代表实际层数或耗时比例</text>
+  <rect x="80" y="244" width="220" height="156" rx="24" fill="#263A60" filter="url(#shadow)"/>
+  <text x="190" y="304" text-anchor="middle" fill="#F4F7FF" font-size="28" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-weight="700">输入状态</text>
+  <text x="190" y="349" text-anchor="middle" fill="#B7C9E8" font-size="19" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">文本 / 图像等输入</text>
+  <path d="M310 322H422" stroke="#A9C0F8" stroke-width="7" marker-end="url(#arr)"/>
+  <rect x="440" y="226" width="600" height="190" rx="28" fill="url(#block)" filter="url(#shadow)"/>
+  <text x="740" y="285" text-anchor="middle" fill="#FFFFFF" font-size="36" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-weight="700">共享权重的 28 层</text>
+  <text x="740" y="336" text-anchor="middle" fill="#F6F3FF" font-size="24" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">第 1 轮建立状态 → 第 2 轮继续细化</text>
+  <text x="740" y="377" text-anchor="middle" fill="#E7E4FF" font-size="20" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">权重复用，计算仍需执行两次</text>
+  <path d="M1010 425V493C1010 527 983 554 949 554H528C494 554 467 527 467 493V432" fill="none" stroke="#F5C86D" stroke-width="8" marker-end="url(#arr)"/>
+  <rect x="624" y="523" width="244" height="62" rx="31" fill="#F5C86D"/>
+  <text x="746" y="563" text-anchor="middle" fill="#172848" font-size="25" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-weight="700">再循环一轮</text>
+  <path d="M1052 322H1162" stroke="#A9C0F8" stroke-width="7" marker-end="url(#arr)"/>
+  <rect x="1180" y="244" width="240" height="156" rx="24" fill="#263A60" filter="url(#shadow)"/>
+  <text x="1300" y="305" text-anchor="middle" fill="#F4F7FF" font-size="28" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-weight="700">输出</text>
+  <text x="1300" y="348" text-anchor="middle" fill="#B7C9E8" font-size="19" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">文本 / 代码 / 工具调用</text>
+  <rect x="80" y="650" width="1340" height="130" rx="20" fill="#203150"/>
+  <text x="118" y="704" fill="#F4F7FF" font-size="25" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-weight="700">关键区别</text>
+  <text x="118" y="748" fill="#C8D6F2" font-size="22" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">共享层参数 ≠ 免费计算；门控更新、KV 缓存共享与索引复用用于控制额外开销。</text>
+</svg>
+
