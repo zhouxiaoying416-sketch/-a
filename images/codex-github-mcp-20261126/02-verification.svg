@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-label="Codex GitHub MCP 实测验收路径">
+  <rect width="1200" height="560" fill="#f7f9fa"/>
+  <text x="60" y="76" fill="#18232b" font-family="Arial,Microsoft YaHei,sans-serif" font-size="34" font-weight="700">从配置存在，到任务真正完成</text>
+  <text x="60" y="116" fill="#53626c" font-family="Arial,Microsoft YaHei,sans-serif" font-size="20">同一台 Windows 主机，Codex CLI 0.172.0；下方为实测记录摘要。</text>
+  <rect x="60" y="180" width="252" height="240" rx="6" fill="#fff" stroke="#bac8ce" stroke-width="2"/>
+  <rect x="336" y="180" width="252" height="240" rx="6" fill="#fff" stroke="#bac8ce" stroke-width="2"/>
+  <rect x="612" y="180" width="252" height="240" rx="6" fill="#fff" stroke="#bac8ce" stroke-width="2"/>
+  <rect x="888" y="180" width="252" height="240" rx="6" fill="#fff" stroke="#bac8ce" stroke-width="2"/>
+  <text x="84" y="230" fill="#116c64" font-family="Arial,Microsoft YaHei,sans-serif" font-size="24" font-weight="700">1 配置可见</text>
+  <text x="84" y="283" fill="#263941" font-family="Arial,Microsoft YaHei,sans-serif" font-size="19">codex mcp list</text>
+  <text x="84" y="322" fill="#53626c" font-family="Arial,Microsoft YaHei,sans-serif" font-size="18">github：enabled</text>
+  <text x="84" y="356" fill="#53626c" font-family="Arial,Microsoft YaHei,sans-serif" font-size="18">Auth：Bearer token</text>
+  <text x="360" y="230" fill="#116c64" font-family="Arial,Microsoft YaHei,sans-serif" font-size="24" font-weight="700">2 模型回应</text>
+  <text x="360" y="283" fill="#263941" font-family="Arial,Microsoft YaHei,sans-serif" font-size="19">provider：crazyrouter</text>
+  <text x="360" y="322" fill="#53626c" font-family="Arial,Microsoft YaHei,sans-serif" font-size="18">模型调用成功</text>
+  <text x="636" y="230" fill="#116c64" font-family="Arial,Microsoft YaHei,sans-serif" font-size="24" font-weight="700">3 工具调用</text>
+  <text x="636" y="283" fill="#263941" font-family="Arial,Microsoft YaHei,sans-serif" font-size="19">github/issue_read</text>
+  <text x="636" y="322" fill="#263941" font-family="Arial,Microsoft YaHei,sans-serif" font-size="19">github/pull_request_read</text>
+  <text x="636" y="356" fill="#53626c" font-family="Arial,Microsoft YaHei,sans-serif" font-size="18">两次调用均完成</text>
+  <text x="912" y="230" fill="#116c64" font-family="Arial,Microsoft YaHei,sans-serif" font-size="24" font-weight="700">4 核对结果</text>
+  <text x="912" y="283" fill="#263941" font-family="Arial,Microsoft YaHei,sans-serif" font-size="19">Issue #3917：已关闭</text>
+  <text x="912" y="322" fill="#263941" font-family="Arial,Microsoft YaHei,sans-serif" font-size="19">PR #3454：已合并</text>
+  <text x="912" y="356" fill="#53626c" font-family="Arial,Microsoft YaHei,sans-serif" font-size="18">与 GitHub 页面一致</text>
+  <text x="60" y="500" fill="#53626c" font-family="Arial,Microsoft YaHei,sans-serif" font-size="17">原创记录图 · 摘录自真实命令与工具结果；不是软件界面截图</text>
+</svg>
+
