@@ -8,7 +8,7 @@
   <text x="94" y="309" fill="#17212b" font-family="Microsoft YaHei, sans-serif" font-size="22">本地推理需要可用权重与许可</text>
   <text x="94" y="356" fill="#17212b" font-family="Microsoft YaHei, sans-serif" font-size="22">硬件、部署、更新自行承担</text>
   <line x1="640" y1="169" x2="640" y2="451" stroke="#d33e33" stroke-width="4" stroke-dasharray="12 10"/>
-  <text x="661" y="412" fill="#a7352c" font-family="Microsoft YaHei, sans-serif" font-size="18">禁止客户数据越过此线</text>
+  <text x="640" y="492" text-anchor="middle" fill="#a7352c" font-family="Microsoft YaHei, sans-serif" font-size="18">禁止客户数据越过此线</text>
   <rect x="718" y="169" width="418" height="282" rx="8" fill="#ffffff" stroke="#c65d45" stroke-width="3"/>
   <text x="748" y="216" fill="#a8422e" font-family="Microsoft YaHei, sans-serif" font-size="27" font-weight="700">外部服务</text>
   <text x="748" y="262" fill="#17212b" font-family="Microsoft YaHei, sans-serif" font-size="22">Crazyrouter 模型接口</text>
